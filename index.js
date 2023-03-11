@@ -147,18 +147,3 @@ Have Fun and Have a great day.
 );
 
 app.listen(PORT, () => console.log('App listened on port', PORT));
-
-function makeid() {
-  var result = '';
-
-  var characters =
-    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-
-  var characters9 = characters.length;
-
-  for (var i = 0; i < 9; i++) {
-    result += characters.charAt(Math.floor(Math.random() * characters9));
-  }
-
-  return result;
-}
